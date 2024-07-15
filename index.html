@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+
+    <title>Online payment gateway for multi-platform integration | 9Pay JSC</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="download-shop">
+        <div class="container-sm d-flex align-items-center py-2">
+            <img src="https://npay-214706.as.r.appspot.com/npay/16_0/group-2-1679979111.png" alt="Icon Shop"
+                class="mr-2">
+            <p class="mb-0">Top-up card, game card, bill payment. <a target="_blank">Shop
+                    Now</a></p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.svg" alt="Your Logo Description" width="100" height="50">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <!-- navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About 9Pay</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Payment Gateway </a>
+                        <ul class="dropdown-menu main-nav__sub-item">
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Collection -
+                            Disbursement </a>
+                        <ul class="dropdown-menu cd main-nav__sub-item2 ">
+                            <div class="main d-flex justify-content-around">
+                                <div class=" w-25">
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                </div>
+                                <div class=" w-25">
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                </div>
+                                <div class=" w-25">
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                                src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                                class="mr-12">
+                                            <div>
+                                                <p class="sub-item--label">Cổng thanh toán</p>
+                                                <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                            </div>
+                                        </a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> News </a>
+                        <ul class="dropdown-menu main-nav__sub-item3">
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business Cooperation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recruit</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Blogs </a>
+                        <ul class="dropdown-menu main-nav__sub-item3">
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                            <li><a href="/cong-thanh-toan" class="d-flex nuxt-link-active"><img
+                                        src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán"
+                                        class="mr-12">
+                                    <div>
+                                        <p class="sub-item--label">Cổng thanh toán</p>
+                                        <p class="sub-item--desc">Một kết nối cho tất cả kênh thanh toán</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="mobile-navbar">
+        <ul class="main-nav menu">
+            <li class="menu1 box__9shop"><a target="_blank" class="header__9shop-mb">
+                    <div class="d-flex align-items-center"><i class="icon icon-shop"></i>
+                        <div class="ml-12">
+                            <div class="color-dark font-600 font-13 line-16">Shop 9Pay</div> <span
+                                class="font-12 color-light line-12">Top-up Card, game voucher...</span>
+                        </div>
+                    </div>
+                    <div class="link__shop9pay">Connect</div>
+                </a></li>
+            <li class="menu1"><a class="main-nav__item">About 9Pay</a></li>
+            <li class="menu1" id="drop3"><a
+                    class="main-nav__item nuxt-link-exact-active nuxt-link-active dropdown-toggle""
+                    aria-current=" page">Payment
+                    Gateway</a>
+            </li>
+            <div class="submenu-wrapper dropdown-ui-mobile">
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+            </div>
+
+            <li class="menu1" id="drop4"><a
+                    class="main-nav__item nuxt-link-exact-active nuxt-link-active dropdown-toggle""
+                    aria-current=" page">Collection - Disbursement</a>
+
+            </li>
+            <div class="submenu-wrapper4 dropdown-ui-mobile">
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+            </div>
+            <!----> <!---->
+            <li class="menu1" id="drop5"><a
+                    class="main-nav__item nuxt-link-exact-active nuxt-link-active dropdown-toggle""
+                    aria-current=" page">News
+                    <!----></a> <!----></li>
+            <div class="submenu-wrapper5 dropdown-ui-mobile">
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+                <li><a href="/cong-thanh-toan" class="sub__item-mb sub__item-mb1 nuxt-link-active"><img
+                            src="https://cdn.9pay.vn/ctt-1687756441.png" alt="Icon cổng thanh toán" class="mr-12">
+                        <div>
+                            <p class="sub-item--label font-13 color-medium">Cổng thanh toán</p>
+                        </div>
+                    </a></li>
+            </div>
+            <li class="menu1"><a class="main-nav__item">Business Cooperation</a></li>
+            <!---->
+            <li class="menu1"><a target="_blank" class="main-nav__item">Recruit</a>
+            </li>
+            <!---->
+            <!-- <li class="menu1">
+                <div class="main-nav__item language__mb">
+                    <div>Language</div>
+                    <div class="switch-language"><input type="checkbox" true-value="vi" false-value="en"
+                            aria-label="Language">
+                        <span class="en"> en</span>
+                    </div>
+                </div>
+            </li> -->
+            <footer class="text-center text-lg-start bg-light text-muted footer no-hide">
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <div class="col-md-3 col-sm-12 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <div class="ft__company">
+                                    <div class="footer__logo">
+                                        <div class="d-flex d-md-block justify-content-start align-items-center">
+                                            <img src="https://cdn.9pay.vn/website/ve-9pay/logo-box1.png"
+                                                alt="Logo 9Pay gradient" class="ic-logo mr-12">
+                                            <h4 class="mt-16">
+                                                9Pay Joint Stock Company
+                                            </h4>
+                                        </div>
+                                        <p>Address: 34 Nguyen Khanh Toan Street, Hanoi, Vietnam
+                                            <br>Intermediary Payment
+                                            Service License: No. 60/GP-NHNN <br>MST: 0108425897
+                                        </p>
+                                        <div>
+                                            <a href="https://www.facebook.com/9PayVN">
+                                                <img src="https://cdn.9pay.vn/website/icons/ic-facebook.png"
+                                                    alt="Icon Facebook" class="ic-social">
+                                            </a>
+                                            <a href="https://www.youtube.com/channel/UCsB71LkF8bkXs2VMvr6qUDg">
+                                                <img src="https://cdn.9pay.vn/website/icons/ic-youtobe.png"
+                                                    alt="Icon Youtube" class="ic-social"></a>
+                                            <a href="https://www.linkedin.com/company/9pay">
+                                                <img src="https://cdn.9pay.vn/website/icons/ic-linkedin.png"
+                                                    alt="Icon Linkedin" class="ic-social">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 rm">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Payment solutions
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">Collection - Disbursement</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Payment gateway</a>
+                                </p>
+                                <h6 class="text-uppercase fw-bold mb-4 mt-5">
+                                    About 9Pay
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">About us</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Terms of use</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Privacy policy</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Built-in documentation</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 rm">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    News
+                                </h6>
+                                <p>
+                                    <a href="#!" class="text-reset">News</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Events</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Promotion</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-reset">Blog</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-sm-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">Customer service</h6>
+                                <p>Hotline (8h-18h | T2-T6)</p>
+                                <p class="color-weight">1900 88 68 32</p>
+
+                                <p>
+                                    Email (8h-22h)
+                                </p>
+                                <p class="color-weight">hotro@9pay.vn</p>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">Business cooperation</h6>
+                                <p>Email</p>
+                                <p class="color-weight">bix@9pay.vn</p>
+                                <p>
+                                    Website
+                                </p>
+                                <p class="color-weight">developers.9pay.vn</p>
+                                <p>
+                                    Invite cooperation
+                                </p>
+                                <button class="btn animated-btn">
+                                    Contact us
+                                    <span class="arrow">></span>
+                                </button>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+
+                <!-- Copyright -->
+                <section style="  background-color: #00293A;">
+                    <div class="container">
+                        <div class="footer__bottom py-24">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 mb-lg-0 mb-2">
+                                    <p class="font-12">@ 2023 9Pay JSC. All rights reserved</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div
+                                        class="footer__bottom-icon d-flex justify-content-center justify-content-md-end align-items-center">
+                                        <div class="icon-bct mr-20 d-none d-sm-block"><a target="_blank"
+                                                href="http://online.gov.vn/Home/AppDetails/1960?AspxAutoDetectCookieSupport=1"><img
+                                                    src="https://cdn.9pay.vn/website/icons/bct.png"
+                                                    alt="Icon Bộ Công Thương"></a>
+                                        </div>
+                                        <div class="icon-appstore mr-12"><a target="_blank"
+                                                href="https://apps.apple.com/vn/app/id1484320059"><img
+                                                    src="https://storage.googleapis.com/npay/app-store-1678171863.png"
+                                                    alt="Tải 9Pay App Store"></a></div>
+                                        <div class="icon-ggplay"><a target="_blank"
+                                                href="https://play.google.com/store/apps/details?id=vn.ninepay.ewallet&amp;pli=1"><img
+                                                    src="https://storage.googleapis.com/npay/google-play-b2c98bb275-1678171870.png"
+                                                    alt="Tải 9Pay Google Play"></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+
+                        <!-- Copyright -->
+                    </footer>
+        </ul>
+    </section>
+    <section class="section_banner">
+
+        <div class="container">
+            <div class="section__banner-box row">
+                <div class="col-sm-12 col-md-5 mt-xxl-5 ">
+                    <div class="btn-gateway">
+                        <img class="btn-gateway-img" src="https://cdn.9pay.vn/website/icons/ic-c.png" alt="icon"
+                            width="25" height="15">
+                        <h1 class="btn-gateway-h1 color-dark">Payment Gateway</h1>
+                    </div>
+                    <h1 class="col-h1 mt-4 mt-lg-4 ">Quick connection
+                        Easy payment</h1>
+                    <h3 class="col-h4 color-medium">
+                        Providing online payment solutions to help change consumer shopping habits with cash
+                    </h3>
+                    <div class="d-flex align-items-center mt-3">
+                        <button class="btn animated-btn">
+                            Request for support
+                            <span class="arrow">></span>
+                        </button>
+                        <img src="https://cdn.9pay.vn/website/icons/ic-active.svg" alt="icon" class="m-2" width="16"
+                            height="16">
+                        <p class="color-medium fs-6 m-0">
+                            Customer Service available 24/7
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 animated-backdrop position-relative ">
+                    <img src="./assets/image/im6.png" alt="Second Image"
+                        class="other-img position-absolute second-img  img-right-top">
+                    <img src="./assets/image/im2.png" alt="Second Image"
+                        class="other-img position-absolute third-img img-left-center">
+                    <img src="./assets/image/im4.png" alt="Second Image"
+                        class="other-img position-absolute fourth-img  img-right-center">
+                    <img src="./assets/image/im3.png" alt="Second Image"
+                        class="other-img position-absolute sixth-img img-right-bottom">
+                    <img src="./assets/image/im5.png" alt="Second Image"
+                        class="other-img position-absolute fifth-img img-left-bottom ">
+                    <img src="./assets/image/im1.png" alt="First Image" class="first-img img-fluid img-center">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_payment">
+
+        <div class="container">
+            <div class="box-1 row align-items-center">
+                <div class="col-md-6 mt-xxl-5 col-sm-12 order-cus-2 ">
+                    <img class="img-payment"
+                        src="https://storage.googleapis.com/npay/all-payment-methods-1678242313.png">
+                </div>
+                <div class="col-md-6 col-sm-12 order-cus-1">
+                    <h1 class="col-h1 mt-lg-4">All payment methods available in Vietnam</h1>
+                    <h3 class="col-h3 color-medium">
+                        9Pay Payment Gateway covers all online payment methods to help your business grow and satisfy
+                        all your customer’s needs
+
+                    </h3>
+                    <img class="payment-img-2" src="https://cdn.9pay.vn/website/home/payment-methods.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deploy__connect container-page ">
+        <div class="container  mt-xxl-5 ">
+
+            <div class="box-2 row align-items-center">
+                <div class="col-md-6 ct-dconnect">
+                    <h2 class="color-dark font-600 col-h1">Easy to connect and deploy</h2>
+                    <div class="box-1-1">
+                        <h4 class="font-600 color-success col-h2 mb-4">Having a multi-platform integration:</h4>
+                        <div class="d-flex align-items-start align-items-md-center mb-2">
+                            <img src="https://storage.googleapis.com/npay/111-1677648245.png" alt="Icon hỗ trợ tích hợp"
+                                class="me-16 icon-box img-connect-icon ">
+
+                            <p class="color-medium m-0">
+                                Supporting website / application and other platforms: Wordpress, Woocommerce, Magento,
+                                ...
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-start align-items-md-center b-phone"><img
+                                src="https://storage.googleapis.com/npay/113-1677648240.png"
+                                alt="Icon nền tảng điện thoại" class="me-16 icon-box img-connect-icon">
+                            <p class="color-medium m-0">Supporting mobile platforms: IOS, Android,
+                                Windowphone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-1-2">
+                        <h4 class="font-600 color-success col-h2 mt-5 mb-2">Variety of extensive functions:</h4>
+                        <div class="d-flex align-items-start align-items-md-center mb-16"><img
+                                src="https://storage.googleapis.com/npay/114-1677648235.png" alt="Icon lưu token thẻ"
+                                class="me-16 icon-box img-connect-icon">
+                            <div>
+                                <p class="font-600 color-dark col-h3 m-0 mt-2">Tokenization</p>
+                                <p class="color-medium m-0">
+                                    Saving encrypted card tokens, no need to enter card information in the next payments
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start align-items-md-center mt-2"><img
+                                src="https://storage.googleapis.com/npay/112-1677648252.png"
+                                alt="Icon iframe merchant hosted form" class="me-16 icon-box img-connect-icon">
+                            <div>
+                                <p class="font-600 color-dark col-h3 m-0">Iframe &amp; Merchant hosted form</p>
+                                <p class="color-medium m-0">
+                                    Showing the the check-out page directly on your website or application, no need to
+                                    redirect
+                                    to other payment pages
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 img-dconnect"><img class="payment-img-2"
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/box-2.png"
+                        alt="Cổng thanh toán đa nền tảng ứng dụng">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section_payment">
+        <div class="container">
+            <div class="box-1 row align-items-center">
+                <div class="col-md-6 col-sm-12 mt-xxl-5 order-cus-2 ">
+                    <img class="img-payment" src="https://storage.googleapis.com/npay/link-mpos-1678242321.png">
+                </div>
+                <div class="col-md-6  col-sm-12 ct-pLink order-cus-1">
+                    <h2 class="color-dark font-600 col-h1">Payment Link - Mpos</h2>
+                    <div class="--list">
+                        <div class="d-flex  mb-3"><img src="https://storage.googleapis.com/npay/118-1677648212.png"
+                                alt="Icon tạo link thanh toán" class="me-16 icon-box img-connect-icon">
+                            <p class="color-dark">One click to create a payment request</p>
+                        </div>
+                        <div class="d-flex  mb-3"><img src="https://storage.googleapis.com/npay/117-1677648218.png"
+                                alt="Icon thanh toán COD" class="me-16 icon-box img-connect-icon">
+                            <p class="color-dark">Reducing up to 90% the cancellation rate compared
+                                to the COD
+                                payment</p>
+                        </div>
+                        <div class="d-flex  mb-3"><img src="https://storage.googleapis.com/npay/116-1677648224.png"
+                                alt="Icon code" class="me-16 icon-box img-connect-icon">
+                            <p class="color-dark">No need website and technical integration</p>
+                        </div>
+                        <div class="d-flex  mb-3"><img src="https://storage.googleapis.com/npay/115-1677648229.png"
+                                alt="Icon linh hoạt chức năng" class="me-16 icon-box img-connect-icon">
+                            <p class="color-dark">Flexible, easy and cost-saving</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="customer__pay">
+        <div class="container">
+            <h2 class="customer__pay-title color-white">Fast and easy payment gateway for customers</h2>
+            <div class="row slider-center__content gateway-center__content">
+                <div dir="ltr" class=" col-xl-6 col-md-12 col-sm-6 slick-slider slick-initialized">
+                    <div class="slider">
+                        <div tabindex="-1" data-index="0" aria-hidden="true" class="slick-slide"
+                            style="outline: none; width: 564px;">
+                            <div>
+                                <div tabindex="-1" class="list__slide-center"
+                                    style="width: 100%; display: inline-block;">
+                                    <div class="item__slide-center"> <img
+                                            src="https://storage.googleapis.com/npay/en-1-1678240970.png"
+                                            alt="Khách hàng thanh toán dễ dàng với cổng thanh toán 1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" data-index="1" aria-hidden="false"
+                            class="slick-slide slick-active slick-current" style="outline: none; width: 564px;">
+                            <div>
+                                <div tabindex="-1" class="list__slide-center"
+                                    style="width: 100%; display: inline-block;">
+                                    <div class="item__slide-center"> <img
+                                            src="https://storage.googleapis.com/npay/en-2-1678240978.png"
+                                            alt="Khách hàng thanh toán dễ dàng với cổng thanh toán 2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" data-index="2" aria-hidden="true" class="slick-slide"
+                            style="outline: none; width: 564px;">
+                            <div>
+                                <div tabindex="-1" class="list__slide-center"
+                                    style="width: 100%; display: inline-block;">
+                                    <div class="item__slide-center"> <img
+                                            src="https://storage.googleapis.com/npay/en-3-1678240985.png"
+                                            alt="Khách hàng thanh toán dễ dàng với cổng thanh toán 3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" data-index="3" aria-hidden="true" class="slick-slide"
+                            style="outline: none; width: 564px;">
+                            <div>
+                                <div tabindex="-1" class="list__slide-center"
+                                    style="width: 100%; display: inline-block;">
+                                    <div class="item__slide-center"> <img
+                                            src="https://storage.googleapis.com/npay/en-4-1678240994.png"
+                                            alt="Khách hàng thanh toán dễ dàng với cổng thanh toán 4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-6 col-md-12 col-sm-6 slider__carousel-title">
+                    <h2>Fast and easy payment gateway for customers</h2>
+                    <ul class="slider-center__carousel-step cc">
+                        <li class="cursor-pointer cc">
+                            <div class="number">1</div>
+                            <div class="desc">
+                                <p class="font-600 font-16">Visit website/application to pick up the
+                                    goods or
+                                    services</p> <!---->
+                            </div>
+                        </li>
+                        <li class="cursor-pointer">
+                            <div class="number">2</div>
+                            <div class="desc">
+                                <p class="font-600 font-16">Confirm the order and choose payment method
+                                </p>
+                                <div class="desc-p"></div>
+                            </div>
+                        </li>
+                        <li class="cursor-pointer">
+                            <div class="number">3</div>
+                            <div class="desc">
+                                <p class="font-600 font-16">Fill the transaction information</p> <!---->
+                            </div>
+                        </li>
+                        <li class="cursor-pointer">
+                            <div class="number">4</div>
+                            <div class="desc">
+                                <p class="font-600 font-16">Complete the transaction</p> <!---->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_img_payment">
+        <div class="container">
+            <h2 class="color-dark font-600 col-h1">9Pay payment gateway is
+                your first choice
+            </h2>
+            <div class="gateway__choice-box">
+                <div class="gateway__choice-box-item payment-img-2"><img
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/whychoose1.png"
+                        alt="Icon cung cấp phương thức thanh toán">
+                    <p>All payment solutions for your customers in our gateway</p>
+                </div>
+                <div class="gateway__choice-box-item payment-img-2"><img
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/whychoose2.png"
+                        alt="Icon loại hình kinh doanh trực tuyến">
+                    <p>Payment processing for all business models</p>
+                </div>
+                <div class="gateway__choice-box-item payment-img-2"><img
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/whychoose3.png"
+                        alt="Icon linh hoạt thời gian thanh toán">
+                    <p>- Flexible settlement <br>- Lowest cost payment</p>
+                </div>
+                <div class="gateway__choice-box-item payment-img-2"><img
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/whychoose4.png" alt="Icon bảo mật tiêu chuẩn">
+                    <p>Ensuring top security standards: PCI DSS, 3D-Secure, TLS</p>
+                </div>
+                <div class="gateway__choice-box-item payment-img-2"><img
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/whychoose5.png" alt="Icon link thanh toán">
+                    <p class="color-dark font-18 mx-16">- Using Payment link without technical integration
+                        <br>- Supporting multiple platforms
+                    </p>
+                </div>
+                <div class="gateway__choice-box-item payment-img-2"><img
+                        src="https://cdn.9pay.vn/website/cong-thanh-toan/whychoose6.png" alt="Icon hệ thống quản lý">
+                    <p class="color-dark font-18 mx-16">- Providing dashboard for transaction management
+                        <br>- Increasing the number of customers and sales volume
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_faq mt-xxl-5 pb-xxl-5">
+        <div class="container justify-content-center align-item-center">
+            <h2 class="color-dark font-600 font-18 mb-4 col-h1 pt-xxl-5 text-center">Top questions</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            What do I need to partner with 9Pay?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            I'm an Individual Business, can I register for 9Pay Payment Gateway?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            Which documents are required when registering 9Pay Payment Gateway?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            What are the fees when using 9Pay Payment Gateway?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            Can foreign customers make payments by 9Pay?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            How long will our company receive the funds after the successful transaction?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-xxl-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <img width="20px" class="ms-xl-1 me-lg-3" src="./assets/question.png">
+                            How can I track the status of transactions?
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse">
+                        <div class="accordion-body color-medium">
+                            You only need a website, application, fanpage or store on an e-commerce platform
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_img_payment pt-xxl-5">
+        <div class="container">
+            <h2 class="color-dark font-600 font-18 mb-4 col-h2 ">Platform Partners</h2>
+            <div class="customers__partners-payment ">
+                <div class="slick-slider slick-initialized">
+                    <div class="slick-list">
+                        <div class="slick-track-tog" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                            <div tabindex="-1" data-index="0" aria-hidden="false"
+                                class="slick-slide slick-active slick-current" style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47752-1677638700.png"
+                                            alt="Logo Napas"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47783-1677638882.png"
+                                            alt="Logo SHB"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="1" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/rectangle-2722-1677638913.png"
+                                            alt="Logo VISA"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47758-1677638860.png"
+                                            alt="Logo VIB"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="2" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/rectangle-2723-1677638919.png"
+                                            alt="Logo Mastercard"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47759-1677638854.png"
+                                            alt="Logo TPBank"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="3" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47754-1677638681.png"
+                                            alt="Logo American Express"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47760-1677638845.png"
+                                            alt="Logo Ocean Bank"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="4" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47753-1677638691.png"
+                                            alt="Logo JCB"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47761-1677638838.png"
+                                            alt="Logo VPBank"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="5" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47755-1677638877.png"
+                                            alt="Logo Vietcombank"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47762-1677638833.png"
+                                            alt="Logo Vietinbank"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="6" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47756-1677638871.png"
+                                            alt="Logo BIDV"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47782-1677638822.png"
+                                            alt="Logo Agribank"></div>
+                                </div>
+                            </div>
+                            <div tabindex="-1" data-index="7" aria-hidden="false" class="slick-slide slick-active"
+                                style="outline: none; width: 152px;">
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47757-1677638866.png"
+                                            alt="Logo MBBank"></div>
+                                </div>
+                                <div>
+                                    <div tabindex="-1" style="width:100%;display:inline-block;"><img
+                                            class="payment-img-2"
+                                            src="https://storage.googleapis.com/npay/group-47763-1677638827.png"
+                                            alt="Hơn 40 ngân hàng khác"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="merchant container">
+            <h2 class="color-dark font-600 font-24 mt-4 mb-4 col-h2 ">Merchants</h2>
+            <div class="box-slide  ">
+                <div class="slide-track-1 mb-3">
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/payer-max.png" alt="Logo PayerMax"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/byte-dance.png" alt="Logo ByteDance"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/tik-tok.png" alt="Logo TikTok">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/2c2p.png" alt="Logo 2C2P">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/terrapay.png" alt="Logo Terrapay"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/e9-pay.png" alt="Logo E9Pay">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/nimo-tv.png" alt="Logo NimoTv">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/razer.png" alt="Logo Razer">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/bigo-live.png" alt="Logo Bigo Live"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/payer-max.png" alt="Logo PayerMax"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/byte-dance.png" alt="Logo ByteDance"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/tik-tok.png" alt="Logo TikTok">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/2c2p.png" alt="Logo 2C2P">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/terrapay.png" alt="Logo Terrapay"></div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/e9-pay.png" alt="Logo E9Pay">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/nimo-tv.png" alt="Logo NimoTv">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/razer.png" alt="Logo Razer">
+                    </div>
+                    <div class="image-track-1"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/bigo-live.png" alt="Logo Bigo Live"></div>
+                </div>
+                <div class="slide-track-2">
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/pandora.png" alt="Logo La Pandora Cruise"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/amft.png" alt="Logo AMFT">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://dev-cdn.9pay.mobi/group-47979-1686652349.png" alt="Logo Lilys Travel"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/btaskee.png" alt="Logo Btaskee"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/evn.png" alt="Logo EVNFinance">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/pomahome.png" alt="Logo Pomahome"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/dat-xanh.png" alt="Logo DatXanh Mien Bac"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/tikop.png" alt="Logo Tikop">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/renea.png" alt="Logo Renea">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/bao-cong-nghe.png" alt="Logo Bão Công Nghệ"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/anfin.png" alt="Logo Anfin">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/pandora.png" alt="Logo La Pandora Cruise"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/amft.png" alt="Logo AMFT">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://dev-cdn.9pay.mobi/group-47979-1686652349.png" alt="Logo Lilys Travel"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/btaskee.png" alt="Logo Btaskee"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/evn.png" alt="Logo EVNFinance">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/pomahome.png" alt="Logo Pomahome"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/dat-xanh.png" alt="Logo DatXanh Mien Bac"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/tikop.png" alt="Logo Tikop">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/renea.png" alt="Logo Renea">
+                    </div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/bao-cong-nghe.png" alt="Logo Bão Công Nghệ"></div>
+                    <div class="image-track-2"><img class="payment-img-2"
+                            src="https://cdn.9pay.vn/website/logo-web/anfin.png" alt="Logo Anfin" data-v-7b7888ff="">
+                    </div>
+
+                    <!-- <div class="marquee">
+                    <p>How to add WordPress Related Posts Without Plugins</p>
+                    <p>Automate Your Dropbox Files With Actions</p>
+                </div> -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_form_contact">
+        <div class="container">
+            <div id="contact" data-v-2a6dcdc8="">
+                <div class="form-contact" data-v-2a6dcdc8="">
+                    <div class="form-contact__bg" data-v-2a6dcdc8="">
+                        <div class="form-contact__left" data-v-2a6dcdc8=""><img
+                                src="https://dev-cdn.9pay.mobi/2-1686624817.png" alt="Logo 9Pay background"
+                                class="contact-icon" data-v-2a6dcdc8="">
+                            <div class="contact-subtitle" data-v-2a6dcdc8="">Become our partner to grow your business
+                                today
+                            </div>
+                            <div class="contact-title" data-v-2a6dcdc8="">Free registration, free maintenance</div>
+                        </div>
+                        <div class="form-contact__right" data-v-2a6dcdc8="">
+                            <validation-observer class="form" data-v-2a6dcdc8="">
+                                <form data-v-2a6dcdc8="">
+                                    <div class="form-group" data-v-2a6dcdc8="">
+                                        <input class="form-control form-control-lg" type="text"
+                                            placeholder="Your name *" aria-label=".form-control-lg example">
+                                    </div>
+                                    <div class="form-group form-gap" data-v-2a6dcdc8="">
+                                        <input class="form-control form-control-lg left" type="text"
+                                            placeholder="Email *" aria-label=".form-control-lg example">
+                                        <input class="form-control form-control-lg right" type="text"
+                                            placeholder="Phone number *" aria-label=".form-control-lg example">
+                                    </div>
+                                    <div class="form-submit" data-v-2a6dcdc8="">
+                                        <button class="btn animated-btn">
+                                            Send Request
+                                            <span class="arrow">></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </validation-observer>
+                        </div>
+                    </div>
+                </div> <!---->
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted footer footer-main no-hide">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <div class="col-md-3 col-sm-12 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <div class="ft__company">
+                            <div class="footer__logo">
+                                <div class="d-flex d-md-block justify-content-start align-items-center">
+                                    <img src="https://cdn.9pay.vn/website/ve-9pay/logo-box1.png"
+                                        alt="Logo 9Pay gradient" class="ic-logo mr-12">
+                                    <h4 class="mt-16">
+                                        9Pay Joint Stock Company
+                                    </h4>
+                                </div>
+                                <p>Address: 34 Nguyen Khanh Toan Street, Hanoi, Vietnam
+                                    <br>Intermediary Payment
+                                    Service License: No. 60/GP-NHNN <br>MST: 0108425897
+                                </p>
+                                <div>
+                                    <a href="https://www.facebook.com/9PayVN">
+                                        <img src="https://cdn.9pay.vn/website/icons/ic-facebook.png" alt="Icon Facebook"
+                                            class="ic-social">
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCsB71LkF8bkXs2VMvr6qUDg">
+                                        <img src="https://cdn.9pay.vn/website/icons/ic-youtobe.png" alt="Icon Youtube"
+                                            class="ic-social"></a>
+                                    <a href="https://www.linkedin.com/company/9pay">
+                                        <img src="https://cdn.9pay.vn/website/icons/ic-linkedin.png" alt="Icon Linkedin"
+                                            class="ic-social">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 rm">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Payment solutions
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Collection - Disbursement</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Payment gateway</a>
+                        </p>
+                        <h6 class="text-uppercase fw-bold mb-4 mt-5">
+                            About 9Pay
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">About us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terms of use</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Privacy policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Built-in documentation</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 rm">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            News
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">News</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Events</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Promotion</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Blog</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-sm-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Customer service</h6>
+                        <p>Hotline (8h-18h | T2-T6)</p>
+                        <p class="color-weight">1900 88 68 32</p>
+
+                        <p>
+                            Email (8h-22h)
+                        </p>
+                        <p class="color-weight">hotro@9pay.vn</p>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Business cooperation</h6>
+                        <p>Email</p>
+                        <p class="color-weight">bix@9pay.vn</p>
+                        <p>
+                            Website
+                        </p>
+                        <p class="color-weight">developers.9pay.vn</p>
+                        <p>
+                            Invite cooperation
+                        </p>
+                        <button class="btn animated-btn">
+                            Contact us
+                            <span class="arrow">></span>
+                        </button>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <section style="  background-color: #00293A;">
+            <div class="container">
+                <div class="footer__bottom py-24">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-lg-0 mb-2">
+                            <p class="font-12">@ 2023 9Pay JSC. All rights reserved</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div
+                                class="footer__bottom-icon d-flex justify-content-center justify-content-md-end align-items-center">
+                                <div class="icon-bct mr-20 d-none d-sm-block"><a target="_blank"
+                                        href="http://online.gov.vn/Home/AppDetails/1960?AspxAutoDetectCookieSupport=1"><img
+                                            src="https://cdn.9pay.vn/website/icons/bct.png"
+                                            alt="Icon Bộ Công Thương"></a>
+                                </div>
+                                <div class="icon-appstore mr-12"><a target="_blank"
+                                        href="https://apps.apple.com/vn/app/id1484320059"><img
+                                            src="https://storage.googleapis.com/npay/app-store-1678171863.png"
+                                            alt="Tải 9Pay App Store"></a></div>
+                                <div class="icon-ggplay"><a target="_blank"
+                                        href="https://play.google.com/store/apps/details?id=vn.ninepay.ewallet&amp;pli=1"><img
+                                            src="https://storage.googleapis.com/npay/google-play-b2c98bb275-1678171870.png"
+                                            alt="Tải 9Pay Google Play"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <section>
+
+                <!-- Copyright -->
+
+
+
+    </footer>
+    <!-- Footer -->
+    <div id="backToTopH" style=""><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="23.5" fill="#00293A" fill-opacity="0.8" stroke="#F4F6FA"></circle>
+            <path d="M24 31.5L24 16.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+            <path d="M16.5 23.25L24 15.75L31.5 23.25" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </svg></div>
+    <a href="https://9pay.page.link/download" id="qaDowloadMb" class="--collapse"
+        style="width: 44px;display: none ;"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.96285 0.952536C9.96807 0.952292 9.97328 0.952046 9.9785 0.951798C10.7232 0.916217 11.2679 1.45697 11.2534 2.23517C11.2327 3.35469 11.2369 4.47473 11.2411 5.59468C11.2429 6.05534 11.2446 6.51599 11.2446 6.97658V7.25136H11.4877C11.6951 7.25136 11.9026 7.25168 12.11 7.25201C12.6191 7.2528 13.1282 7.2536 13.6373 7.2496C13.9562 7.24713 14.2031 7.3581 14.3352 7.65613C14.468 7.95558 14.381 8.21345 14.1608 8.44349C13.4547 9.18196 12.7492 9.92103 12.0438 10.6601C11.2069 11.5368 10.37 12.4135 9.53216 13.2892C9.19502 13.6415 8.80257 13.64 8.4665 13.2888C7.74291 12.532 7.01994 11.7747 6.29697 11.0174C5.47755 10.159 4.65813 9.30069 3.83782 8.44314C3.61764 8.21274 3.52993 7.95628 3.66274 7.65649C3.79484 7.3581 4.04144 7.24713 4.36026 7.24924C4.91994 7.25301 5.47962 7.2523 6.05175 7.25159C6.28341 7.2513 6.51712 7.25101 6.75368 7.25101L6.75404 7.25136V6.97728C6.75404 6.51631 6.75564 6.05533 6.75724 5.59437C6.76116 4.46764 6.76508 3.34101 6.74558 2.21474C6.7329 1.47705 7.25992 0.915513 8.01909 0.951798C8.02274 0.951972 8.02639 0.952144 8.03004 0.952316C8.05147 0.950789 8.07311 0.950012 8.09493 0.950012H9.89493C9.91778 0.950012 9.94043 0.950864 9.96285 0.952536Z"
+                fill="white"></path>
+            <rect y="14.45" width="18" height="3.6" rx="1.8" fill="white"></rect>
+        </svg>
+        <!-- <span>Tải ứng dụng Ví 9Pay</span> -->
+    </a>
+    <div id="qaDowload"><span>Tải ứng dụng <br> Ví điện tử 9Pay</span> <img
+            src="https://dev-cdn.9pay.mobi/qa-dowload-1686718867.png" alt="QR download 9Pay"></div>
+</body>
+
+</html>
